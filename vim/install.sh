@@ -10,6 +10,8 @@ git clone https://github.com/tpope/vim-fugitive.git ~/.vim/bundle/vim-fugitive
 git clone https://github.com/scrooloose/syntastic.git ~/.vim/bundle/syntastic
 git clone git://github.com/tpope/vim-surround.git ~/.vim/bundle/vim-surround
 git clone https://github.com/artur-shaik/vim-javacomplete2.git ~/.vim/bundle/vim-javacomplete2
+git clone https://github.com/neomake/neomake.git ~/.vim/bundle/neomake
+git clone https://github.com/Valloric/YouCompleteMe.git ~/.vim/bundle/YouCompleteMe
 
 apt-get install silversearcher-ag
 git clone https://github.com/mileszs/ack.vim.git ~/.vim/bundle/ack.vim
