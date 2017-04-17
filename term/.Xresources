@@ -1,52 +1,53 @@
-UXTerm*renderFont: true
-UXTerm*faceName: Ubuntu Mono
-UXTerm*faceSize: 11
-UXTerm*termName: xterm-256color
-UXTerm*background: #000000
-UXTerm*foreground: #ffffff
-*VT100*translations: #override Shift <Btn1Up>: exec-formatted("firefox '%t'", PRIMARY)
+! urxvt
+URxvt*buffered: true
+URxvt*cursorBlink: true
+URxvt*underlineColor: yellow
+URxvt*font:  xft:inconsolata:size=10:antialias=true
+URxvt*depth: 32
+URxvt*borderless: 1
+URxvt*scrollBar: false
+URxvt*loginShell: true
+Urxvt*secondaryScroll:  true    # Enable Shift-PageUp/Down in screen
+URxvt*saveLines: 5000
+URxvt*termName: rxvt-unicode
+URxvt.perl-ext-common: default,matcher
+URxvt.urlLauncher: firefox
+URxvt.matcher.button: 1
 
+! Scheme from: http://terminal.sexy/#LS0t09DILS0t8nd6mcyZ_8xmZpnMzJnMZszM09DIdHNp8nd6mcyZ_8xmZpnMzJnMZszM8vDs
 ! special
-*.foreground:   #a39e9b
-*.background:   #1f1f1f
-*.cursorColor:  #a39e9b
+*.foreground:   #d3d0c8
+*.background:   #2d2d2d
+*.cursorcolor:  #d3d0c8
 
 ! black
-*.color0:       #404040
-*.color8:       #776e71
+*.color0:       #2d2d2d
+*.color8:       #747369
 
 ! red
-*.color1:       #ef6155
-*.color9:       #ef6155
+*.color1:       #f2777a
+*.color9:       #f2777a
 
 ! green
-*.color2:       #48b685
-*.color10:      #48b685
+*.color2:       #99cc99
+*.color10:      #99cc99
 
 ! yellow
-*.color3:       #fec418
-*.color11:      #fec418
+*.color3:       #ffcc66
+*.color11:      #ffcc66
 
 ! blue
-*.color4:       #06b6ef
-*.color12:      #06b6ef
+*.color4:       #6699cc
+*.color12:      #6699cc
 
 ! magenta
-*.color5:       #815ba4
-*.color13:      #815ba4
+*.color5:       #cc99cc
+*.color13:      #cc99cc
 
 ! cyan
-*.color6:       #5bc4bf
-*.color14:      #5bc4bf
+*.color6:       #66cccc
+*.color14:      #66cccc
 
 ! white
-*.color7:       #a39e9b
-*.color15:      #e7e9db
-
-URxvt*renderFont: true
-URxvt*faceName: Ubuntu Mono
-URxvt*faceSize: 11
-URxvt*termName: xterm-256color
-URxvt.perl-ext-common: default,matcher
-URxvt.url-launcher: /usr/bin/xdg-open
-URxvt.matcher.button: 1
+*.color7:       #d3d0c8
+*.color15:      #f2f0ec
