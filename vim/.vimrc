@@ -71,12 +71,10 @@ endfun
 
 " java support
 autocmd FileType java setlocal omnifunc=javacomplete#Complete
-autocmd Filetype java compiler mvn
-autocmd Filetype pom compiler mvn
-let g:neomake_mvncompile_maker = { 'exe': 'mvn', 'args': ['compile', '-Dcheckstyle.skip=true'] }
-let g:neomake_mvncompiletest_maker = { 'exe': 'mvn', 'args': ['compileTest', '-Dcheckstyle.skip=true'] }
-autocmd! BufWritePost *.java Neomake! mvncompile
-autocmd! BufWritePost *Test.java Neomake! mvncompiletest
+let g:neomake_mvncompile_maker = { 'exe': 'bash', 'args': ['~/tmux_mvn.sh', 'compile', '-Dcheckstyle.skip=true'] }
+let g:neomake_mvntest_maker = { 'exe': 'bash', 'args': ['~/tmux_mvn.sh', 'test', '-Dcheckstyle.skip=true'] }
+let g:neomake_gradlecompile_maker = { 'exe': './gradlew', 'args': ['build'] }
+autocmd! BufWritePost *.java Neomake! gradlecompile
 
 nmap <F4> <Plug>(JavaComplete-Imports-AddSmart)
 
